@@ -1,9 +1,3 @@
 function solution(a, b) {
-    let answer = 0;
-    let index = 0;
-    while (index < a.length) {
-        answer += a[index] * b[index];
-        index++;
-    }
-    return answer;
+    return a.reduce((acc,_,index) => acc += a[index] * b[index],0 );
 }
