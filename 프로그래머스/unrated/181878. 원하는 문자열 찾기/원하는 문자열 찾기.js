@@ -4,6 +4,5 @@ function solution(myString, pat) {
     const lowStr = myString.toLowerCase();
     const lowPat = pat.toLowerCase();
     
-    if(lowStr.indexOf(lowPat) !== -1 ) return 1
-    else return 0
+    return lowStr.includes(lowPat) ? 1 : 0
 }
