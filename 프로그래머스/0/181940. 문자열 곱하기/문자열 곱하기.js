@@ -1,0 +1,1 @@
+const solution = (str, k) => Array.from({ length: k}, () => str).join('');
