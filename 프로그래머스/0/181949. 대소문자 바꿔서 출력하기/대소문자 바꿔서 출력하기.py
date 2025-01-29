@@ -11,3 +11,5 @@ for idx, val in enumerate(str):
     else : result.append(uppStr)
     
 print(''.join(result))
+
+# swapcase()
