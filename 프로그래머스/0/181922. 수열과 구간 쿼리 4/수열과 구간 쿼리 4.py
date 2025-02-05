@@ -1,7 +1,7 @@
 def solution(arr, queries):
-    answer = []
-    for i in range(len(queries)):
-        for j in range(queries[i][0], queries[i][1]+1):
-            if (j % queries[i][2]) == 0:
-                arr[j]+=1
-    return arr
+    answer = arr.copy()
+    for (s, e, k) in queries:
+        for i in range(s, e + 1):
+            if i % k == 0:
+                answer[i] += 1
+    return answer
