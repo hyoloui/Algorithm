@@ -4,7 +4,6 @@ def solution(polynomial):
     num = 0
     
     arr = polynomial.split(" + ")
-    numFirst = arr[0].isdigit()
     for n in arr:
         if n.endswith('x'):
             if n[0] == 'x': xNum += 1
